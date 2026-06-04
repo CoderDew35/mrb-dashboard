@@ -592,7 +592,7 @@
                             <td><span class="badge badge-ig">Instagram</span></td>
                             <td><span class="badge badge-reels">Reels</span></td>
                             <td class="metric-highlight">30,564</td>
-                            <td>174</td>
+                            <td>178</td>
                             <td>21</td>
                             <td>13</td>
                             <td>20.4%</td>
@@ -893,7 +893,7 @@
                     </div>
                     <div class="card-metrics">
                         <div class="card-metric"><div class="card-metric-value text-accent">30.5K</div><div class="card-metric-label">Görüntüleme</div></div>
-                        <div class="card-metric"><div class="card-metric-value">174</div><div class="card-metric-label">Beğeni</div></div>
+                        <div class="card-metric"><div class="card-metric-value">178</div><div class="card-metric-label">Beğeni</div></div>
                         <div class="card-metric"><div class="card-metric-value">21</div><div class="card-metric-label">Yorum</div></div>
                         <div class="card-metric"><div class="card-metric-value text-green">223</div><div class="card-metric-label">Profil Ziyareti</div></div>
                     </div>
@@ -910,9 +910,20 @@
                         <div class="demo-bar"><span class="demo-bar-label">İngiltere</span><div class="demo-bar-track"><div class="demo-bar-fill fill-light" style="width:5.7%"></div></div><span class="demo-bar-value">5.7%</span></div>
                     </div>
                     <div class="demo-section">
+                        <div class="demo-title">Cinsiyet</div>
+                        <div class="demo-bar"><span class="demo-bar-label">Kadın</span><div class="demo-bar-track"><div class="demo-bar-fill fill-red" style="width:60.8%"></div></div><span class="demo-bar-value">60.8%</span></div>
+                        <div class="demo-bar"><span class="demo-bar-label">Erkek</span><div class="demo-bar-track"><div class="demo-bar-fill fill-gray" style="width:39.2%"></div></div><span class="demo-bar-value">39.2%</span></div>
+                    </div>
+                    <div class="demo-section">
                         <div class="demo-title">Takipçi Analizi</div>
-                        <div class="demo-bar"><span class="demo-bar-label">Takipçi</span><div class="demo-bar-track"><div class="demo-bar-fill fill-gray" style="width:20.4%"></div></div><span class="demo-bar-value">20.4%</span></div>
-                        <div class="demo-bar"><span class="demo-bar-label">Yeni Kitle</span><div class="demo-bar-track"><div class="demo-bar-fill fill-red" style="width:79.6%"></div></div><span class="demo-bar-value">79.6%</span></div>
+                        <div class="demo-bar"><span class="demo-bar-label">Takipçi</span><div class="demo-bar-track"><div class="demo-bar-fill fill-gray" style="width:20.2%"></div></div><span class="demo-bar-value">20.2%</span></div>
+                        <div class="demo-bar"><span class="demo-bar-label">Yeni Kitle</span><div class="demo-bar-track"><div class="demo-bar-fill fill-red" style="width:79.8%"></div></div><span class="demo-bar-value">79.8%</span></div>
+                    </div>
+                    <div class="demo-section">
+                        <div class="demo-title">Yaş Dağılımı</div>
+                        <div class="demo-bar"><span class="demo-bar-label">25-34</span><div class="demo-bar-track"><div class="demo-bar-fill fill-red" style="width:53.6%"></div></div><span class="demo-bar-value">53.6%</span></div>
+                        <div class="demo-bar"><span class="demo-bar-label">35-44</span><div class="demo-bar-track"><div class="demo-bar-fill fill-gray" style="width:19.9%"></div></div><span class="demo-bar-value">19.9%</span></div>
+                        <div class="demo-bar"><span class="demo-bar-label">18-24</span><div class="demo-bar-track"><div class="demo-bar-fill fill-light" style="width:15.1%"></div></div><span class="demo-bar-value">15.1%</span></div>
                     </div>
                 </div>
 
@@ -1168,7 +1179,7 @@
                         </div>
                         <div class="compare-metric">
                             <span class="compare-metric-label">Beğeni</span>
-                            <span class="compare-metric-value">174 <span class="change-badge change-down">↓ %44</span></span>
+                            <span class="compare-metric-value">178 <span class="change-badge change-down">↓ %43</span></span>
                         </div>
                         <div class="compare-metric">
                             <span class="compare-metric-label">Yorum</span>
@@ -1414,9 +1425,9 @@
         new Chart(document.getElementById('viewsChart'), {
             type:'bar',
             data:{
-                labels:['Dilek\nEmirzade','GirBiBak\n(Yeni)','Kevser\nDuran','Nazife\nKıral','Pervin\nYemen'],
-                datasets:[{ label:'Görüntüleme', data:[708000,123555,131048,20473,10642],
-                    backgroundColor:[R,G5,G4,G3,'#d0d0d8'], borderRadius:8, borderSkipped:false }]
+                labels:['Dilek\nEmirzade','Kevser\nDuran','GirBiBak\n(Yeni)','Aliye\nÜçöz','Nazife\nKıral','Pervin\nYemen'],
+                datasets:[{ label:'Görüntüleme', data:[708000,131048,123555,30564,20473,10642],
+                    backgroundColor:[R,G5,G4,'#EC1E24cc',G3,'#d0d0d8'], borderRadius:8, borderSkipped:false }]
             },
             options:{
                 responsive:true, maintainAspectRatio:false,
@@ -1431,9 +1442,11 @@
             data:{
                 labels:['Beğeni','Yorum','Kaydetme','Paylaşım','Takipçi'],
                 datasets:[
-                    { label:'Kevser Duran', data:[100,100,92,75,100], backgroundColor:RL, borderColor:R, borderWidth:2, pointBackgroundColor:R },
-                    { label:'GirBiBak (Yeni)', data:[15,31,5,0,2], backgroundColor:G4L, borderColor:G4, borderWidth:2, pointBackgroundColor:G4 },
-                    { label:'Nazife Kıral', data:[36,43,10,25,1], backgroundColor:GRL, borderColor:GR, borderWidth:2, pointBackgroundColor:GR }
+                    { label:'Dilek Emirzade', data:[100,100,0,0,0], backgroundColor:'rgba(236,30,36,0.08)', borderColor:R, borderWidth:2, pointBackgroundColor:R, borderDash:[5,5] },
+                    { label:'Kevser Duran', data:[17,62,92,75,100], backgroundColor:RL, borderColor:R, borderWidth:2, pointBackgroundColor:R },
+                    { label:'Aliye Üçöz', data:[2.5,12,10,11,0.6], backgroundColor:'rgba(236,30,36,0.15)', borderColor:'#EC1E24cc', borderWidth:2, pointBackgroundColor:'#EC1E24cc' },
+                    { label:'GirBiBak (Yeni)', data:[2.5,19,5,0,2], backgroundColor:G4L, borderColor:G4, borderWidth:2, pointBackgroundColor:G4 },
+                    { label:'Nazife Kıral', data:[6.1,26,10,25,1], backgroundColor:GRL, borderColor:GR, borderWidth:2, pointBackgroundColor:GR }
                 ]
             },
             options:{
@@ -1450,6 +1463,7 @@
                 labels:['13-17','18-24','25-34','35-44','45-54','55-64','65+'],
                 datasets:[
                     { label:'Dilek Emirzade', data:[0.2,23.8,50.7,17.2,5.9,1.5,0.7], backgroundColor:R, borderRadius:3 },
+                    { label:'Aliye Üçöz', data:[0.5,15.1,53.6,19.9,7.3,2.6,1.0], backgroundColor:'#EC1E24cc', borderRadius:3 },
                     { label:'GirBiBak (Yeni)', data:[0.2,8.9,79.5,8.0,2.6,0.7,0.2], backgroundColor:G5, borderRadius:3 },
                     { label:'Kevser Duran', data:[0.4,6.1,31.5,33.2,18.9,7.4,2.5], backgroundColor:G4, borderRadius:3 },
                     { label:'Nazife Kıral', data:[2.5,15.5,34.7,23.5,14.5,6.9,2.3], backgroundColor:G3, borderRadius:3 }
@@ -1479,11 +1493,12 @@
         new Chart(document.getElementById('countryCompareChart'), {
             type:'bar',
             data:{
-                labels:['Kıbrıs','Türkiye','Türkmenistan','Azerbaycan','Almanya','İngiltere'],
+                labels:['Kıbrıs','Türkiye','Türkmenistan','Azerbaycan','İngiltere','Almanya'],
                 datasets:[
+                    { label:'Aliye Üçöz', data:[83.8,7.1,0,0,5.7,0], backgroundColor:'#EC1E24cc', borderRadius:4 },
                     { label:'GirBiBak (Yeni)', data:[41.3,12.8,12.4,10.7,0,0], backgroundColor:R, borderRadius:4 },
-                    { label:'Kevser Duran', data:[30.7,62.4,0,0,1.7,0], backgroundColor:G5, borderRadius:4 },
-                    { label:'Nazife Kıral', data:[79.8,14.1,0,0,0,3.5], backgroundColor:G3, borderRadius:4 }
+                    { label:'Kevser Duran', data:[30.7,62.4,0,0,0,1.7], backgroundColor:G5, borderRadius:4 },
+                    { label:'Nazife Kıral', data:[79.8,14.1,0,0,3.5,0], backgroundColor:G3, borderRadius:4 }
                 ]
             },
             options:{
@@ -1497,15 +1512,15 @@
         new Chart(document.getElementById('genderChart'), {
             type:'bar',
             data:{
-                labels:['Aliye Üçöz\n(Alpro)','GirBiBak\n(Yeni)','Kevser\nDuran','Nazife\nKıral','GirBiBak\n(Eski)'],
+                labels:['Dilek\nEmirzade','Aliye Üçöz\n(Mr.Brown)','GirBiBak\n(Yeni)','Kevser\nDuran','Nazife\nKıral','GirBiBak\n(Eski)'],
                 datasets:[
-                    { label:'Kadın', data:[54.8,74.6,16.1,78.6,75.0], backgroundColor:R, borderRadius:4 },
-                    { label:'Erkek', data:[45.2,25.4,83.9,21.4,25.0], backgroundColor:G4, borderRadius:4 }
+                    { label:'Kadın', data:[0,60.8,74.6,16.1,78.6,75.0], backgroundColor:R, borderRadius:4 },
+                    { label:'Erkek', data:[0,39.2,25.4,83.9,21.4,25.0], backgroundColor:G4, borderRadius:4 }
                 ]
             },
             options:{
                 responsive:true, maintainAspectRatio:false,
-                plugins:{ legend:{position:'top',labels:{usePointStyle:true,pointStyle:'circle',font:{size:11}}}, tooltip:{...tooltipStyle,callbacks:{label:c=>c.dataset.label+': %'+c.parsed.y}} },
+                plugins:{ legend:{position:'top',labels:{usePointStyle:true,pointStyle:'circle',font:{size:11}}}, tooltip:{...tooltipStyle,callbacks:{label:c=>c.parsed.y===0?c.dataset.label+': veri yok':c.dataset.label+': %'+c.parsed.y}} },
                 scales:{ y:{beginAtZero:true,max:100,ticks:{callback:v=>'%'+v},grid:{color:'rgba(0,0,0,0.04)'}}, x:{grid:{display:false}} }
             }
         });
